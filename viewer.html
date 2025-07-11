@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Visualizador 360º</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.pannellum.org/2.5/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+   
+</head>
+<body>
+    <div id="panorama" class="viewer"></div>
+    <div id="room-title"></div>
+    <button id="share-button">Partilhar</button>
+    <div id="share-feedback">Link copiado!</div>
+    <a href="index.html" id="home-button">Início</a>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const img = urlParams.get('img');
+        const title = urlParams.get('title');
+
+        pannellum.viewer('panorama', {
+            type: "equirectangular",
+            panorama: "img/" + img,
+            autoLoad: true,
+            autoRotate: -2,
+            showFullscreenCtrl: true
+        });
+
+        if (title) {
+            document.getElementById('room-title').textContent = decodeURIComponent(title);
+        }
+
+        document.getElementById('share-button').addEventListener('click', () => {
+            const link = window.location.href;
+            navigator.clipboard.writeText(link).then(() => {
+                const feedback = document.getElementById('share-feedback');
+                feedback.style.opacity = 1;
+                setTimeout(() => {
+                    feedback.style.opacity = 0;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

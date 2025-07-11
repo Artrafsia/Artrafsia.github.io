@@ -1,0 +1,32 @@
+[
+  {
+    "project": "Cinema São Jorge",
+    "rooms": [
+      {
+        "name": "Sala 1",
+        "file": "Cinema_SJorge/Sala1.jpg"
+      },
+      {
+        "name": "Sala 2",
+        "file": "Cinema_SJorge/Sala2.jpg"
+      },
+      {
+        "name": "Sala 3",
+        "file": "Cinema_SJorge/Sala3.jpg"
+      },
+       {
+        "name": "Sala 4",
+        "file": "Cinema_SJorge/Sala4.png"
+      }
+    ]
+  },
+  {
+    "project": "Outro Local",
+    "rooms": [
+      {
+        "name": "Sala A",
+        "file": "OutroLocal/SalaA.jpg"
+      }
+    ]
+  }
+]
