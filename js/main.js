@@ -3,27 +3,40 @@ fetch('data.json')
   .then(data => {
     const container = document.getElementById('project-list');
     data.forEach((project) => {
-      const wrapper = document.createElement('div');
-      wrapper.className = 'project';
+      // Cria o card
+      const card = document.createElement('div');
+      card.className = 'project-card';
 
-      const header = document.createElement('div');
-      header.className = 'project-header';
-      header.textContent = project.project;
-      header.addEventListener('click', () => {
-        wrapper.classList.toggle('open');
+      // Imagem de fundo (usa a primeira sala)
+      const imgDiv = document.createElement('div');
+      imgDiv.className = 'project-image';
+      imgDiv.style.backgroundImage = `url('img/Cinema_SJorge/Mock.png')`;
+
+      const overlay = document.createElement('div');
+      overlay.className = 'project-overlay';
+      const icon = document.createElement('img');
+      icon.src = 'img/360icon.webp';
+      icon.alt = '360º';
+      icon.className = 'icon-360';
+      overlay.appendChild(icon);
+      imgDiv.appendChild(overlay);
+
+      // Info do projeto
+      const info = document.createElement('div');
+      info.className = 'project-info';
+      const title = document.createElement('div');
+      title.className = 'project-title';
+      title.textContent = project.project;
+      info.appendChild(title);
+
+      // Torna o card clicável para abrir a primeira sala
+      card.addEventListener('click', () => {
+        const room = project.rooms[0];
+        window.location.href = `viewer.html?img=${encodeURIComponent(room.file)}&title=${encodeURIComponent(room.name)}&project=${encodeURIComponent(project.project)}`;
       });
 
-      const roomList = document.createElement('div');
-      roomList.className = 'room-list';
-      project.rooms.forEach(room => {
-        const link = document.createElement('a');
-        link.href = `viewer.html?img=${encodeURIComponent(room.file)}&title=${encodeURIComponent(room.name)}&project=${encodeURIComponent(project.project)}`;
-        link.textContent = room.name;
-        roomList.appendChild(link);
-      });
-
-      wrapper.appendChild(header);
-      wrapper.appendChild(roomList);
-      container.appendChild(wrapper);
+      card.appendChild(imgDiv);
+      card.appendChild(info);
+      container.appendChild(card);
     });
   });
