@@ -362,6 +362,7 @@ h1, h2, h5 {
     padding: 0;
     opacity: 1;
     pointer-events: auto;
+    
 }
 
 #room-switcher a {
@@ -379,6 +380,7 @@ h1, h2, h5 {
     min-width: 70px;
     text-align: center;
 }
+
 
 #room-switcher a.active,
 #room-switcher a[aria-current="true"] {
@@ -429,4 +431,104 @@ h1, h2, h5 {
 
 .project.open ~ #viewer-bar {
     animation: fadeOutDown 0.4s cubic-bezier(.4,2,.6,1) forwards;
+}
+
+/* Hamburger button */
+#room-switcher-toggle {
+    display: none;
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    z-index: 30;
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px #0002;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+
+#room-switcher-toggle:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+/* Linhas do hamburger */
+#room-switcher-toggle span {
+    display: block;
+    width: 28px;
+    height: 3.5px;
+    background: #222;
+    border-radius: 3px;
+    margin: 1px 0;
+    transition: all 0.4s ease;
+}
+
+/* Se quiseres animação ao abrir, podes usar a classe 'open' para transformar o hamburger num X */
+#room-switcher-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+#room-switcher-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+#room-switcher-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Responsivo: mostra hamburger e esconde botões em mobile */
+@media (max-width: 1200px) {
+    #room-switcher {
+        position: fixed;
+        left: 0;
+        bottom: 60px;
+        right: 0;
+        max-height: 40vh;
+        flex-direction: column;
+        gap: 0.3rem;
+        background: #fff;
+        box-shadow: 0 4px 24px #0002;
+        border-radius: 12px 12px 12px 0;
+        padding: 1rem 1.2rem;
+        min-width: unset;
+        width: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #room-switcher.open {
+        opacity: 1;
+        pointer-events: auto;
+        display: flex;
+    }
+    #room-switcher-toggle {
+            display: flex;
+    right: 1.2rem;  /* manter no canto inferior direito */
+    bottom: 1.2rem;
+        width: 44px;
+        height: 44px;
+    }
+    #room-switcher a {
+        min-width: 100px;
+        font-size: 1rem;
+        padding: 0.5rem 0.7rem;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+/* Esconde botões em mobile quando menu está fechado */
+@media (max-width: 1200px) {
+    #room-switcher:not(.open) {
+        display: none;
+    }
 }

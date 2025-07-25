@@ -8,7 +8,10 @@
       { "name": "Sala 3 - FFMS", "file": "Cinema_SJorge/Sala3_FFMS.jpg" },
       { "name": "Sala 3 - Cinema", "file": "Cinema_SJorge/Sala3_Cinema.jpg" },
       { "name": "Sala 4", "file": "Cinema_SJorge/Sala4.jpg" },
-      { "name": "Entrada", "file": "Cinema_SJorge/Entrada.jpg"}
+      { "name": "Entrada", "file": "Cinema_SJorge/Entrada.jpg"},
+      { "name": "Piso1", "file": "Cinema_SJorge/Piso1.jpg" },
+      { "name": "Escadas", "file": "Cinema_SJorge/Escadas.jpg" },
+      { "name": "Piso2", "file": "Cinema_SJorge/Piso2.jpg" }
     ]
   }
 
