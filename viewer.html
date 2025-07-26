@@ -12,6 +12,7 @@
     <div id="panorama" class="viewer"></div>
     <div id="viewer-bar">
         <div id="viewer-actions">
+            <button id="topview-button">Top View</button>
             <button id="share-button">Partilhar</button>
             <a href="index.html" id="home-button"></a>
         </div>
@@ -27,6 +28,17 @@
       <span></span>
       <span></span>
     </button>
+
+    <div id="topview-overlay">
+  <img src="img/Cinema_SJorge/topview.jpg" alt="Top View" id="topview-image" />
+
+  <!-- Exemplo de hotspot clicável -->
+    <div class="topview-hotspot" style="left: 50%; top: 32%;" data-target="Cinema_SJorge/AV3.jpg" title="Zona Palco"></div>
+  <div class="topview-hotspot" style="left: 20%; top: 12%;" data-target="Cinema_SJorge/Entrada.jpg" title="Entrada"></div>
+  <div class="topview-hotspot" style="left: 62%; top: 50%;" data-target="Cinema_SJorge/AV1.jpg" title="Zona Central"></div>
+  <div class="topview-hotspot" style="left: 22%; top: 50%;" data-target="Cinema_SJorge/AV2.jpg" title="Zona Comida"></div>
+</div>
+
     <script src="js/viewer.js"></script>
 </body>
 </html>

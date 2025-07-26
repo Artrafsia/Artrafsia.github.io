@@ -40,3 +40,21 @@ fetch('data.json')
       container.appendChild(card);
     });
   });
+
+  const container = document.getElementById('topview-container');
+let zoom = 1;
+let offsetX = 0;
+let offsetY = 0;
+
+function updateTransform() {
+  container.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${zoom})`;
+}
+
+// Zoom com roda do rato
+container.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  zoom += e.deltaY * -0.0015;
+  zoom = Math.min(Math.max(zoom, 0.5), 3);
+  updateTransform();
+});
+

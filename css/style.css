@@ -253,7 +253,7 @@ h1, h2, h5 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    z-index: 10;
+    z-index: 2000;
     pointer-events: none;
 }
 
@@ -283,6 +283,8 @@ h1, h2, h5 {
     display: inline-flex;
     align-items: center;
     gap: 0.5em;
+  z-index: 1001; /* muito elevado para garantir visibilidade */
+
 }
 
 #home-button::before {
@@ -314,6 +316,7 @@ h1, h2, h5 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 2001;
 }
 
 #current-room {
@@ -484,7 +487,7 @@ h1, h2, h5 {
 }
 
 /* Responsivo: mostra hamburger e esconde botões em mobile */
-@media (max-width: 1200px) {
+@media (max-width: 1455px) {
     #room-switcher {
         position: fixed;
         left: 0;
@@ -527,8 +530,110 @@ h1, h2, h5 {
 }
 
 /* Esconde botões em mobile quando menu está fechado */
-@media (max-width: 1200px) {
+@media (max-width: 1455px) {
     #room-switcher:not(.open) {
         display: none;
     }
 }
+
+
+#topview-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: zoomIn 0.5s ease forwards;
+    overflow: hidden;
+}
+
+#topview-overlay.active {
+    display: flex;
+}
+
+#topview-image {
+    min-width: 110%;
+    min-height: 110%;
+    transition: transform 0.25s ease;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+
+/* Hotspot clickável com ícone 360º */
+.topview-hotspot {
+     width: 24px;
+    height: 24px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topview-hotspot::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/360icon.webp') no-repeat center center;
+    background-size: contain;
+    vertical-align: middle;
+}
+.topview-hotspot:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+/* Zoom animation */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#topview-button {
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+    z-index: 30;
+    width: 80px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* contorno subtil */
+    color: #fff;
+    background: linear-gradient(145deg, #444, #1a1a1a); /* gradiente suave */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6); /* melhora leitura */
+    background-size: 0% 00%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+#topview-button:hover {
+    background: linear-gradient(145deg, #555, #222); /* ligeiramente mais claro no hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+
+
+
+
