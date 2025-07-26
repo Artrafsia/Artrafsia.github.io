@@ -11,7 +11,9 @@
       { "name": "Entrada", "file": "Cinema_SJorge/Entrada.jpg"},
       { "name": "Piso1", "file": "Cinema_SJorge/Piso1.jpg" },
       { "name": "Escadas", "file": "Cinema_SJorge/Escadas.jpg" },
-      { "name": "Piso2", "file": "Cinema_SJorge/Piso2.jpg" }
+      { "name": "Piso2", "file": "Cinema_SJorge/Piso2.jpg" },
+      { "name": "AV 1", "file": "Cinema_SJorge/AV1.jpg" },
+      { "name": "AV 2", "file": "Cinema_SJorge/AV2.jpg" }
     ]
   }
 
