@@ -3,6 +3,7 @@
     "project": "MOCK FESTIVAL - Cinema São Jorge",
     "rooms": [
       { "name": "Sala 1 - Podcast", "file": "Cinema_SJorge/Sala1-1.jpg", "versao": "1" },
+      { "name": "Sala 1 - Podcast V2", "file": "Cinema_SJorge/Sala1-2.jpg", "versao": "3" },
       { "name": "Sala 1 - Stand Up Comedy", "file": "Cinema_SJorge/Sala1.jpg", "versao": "2" },
       { "name": "Sala 2", "file": "Cinema_SJorge/Sala2.jpg" },
       { "name": "Sala 3 - FFMS", "file": "Cinema_SJorge/Sala3_FFMS.jpg" },
@@ -10,11 +11,12 @@
       { "name": "Sala 4", "file": "Cinema_SJorge/Sala4.jpg" },
       { "name": "Entrada", "file": "Cinema_SJorge/Entrada.jpg"},
       { "name": "Piso1", "file": "Cinema_SJorge/Piso1.jpg" },
+      { "name": "Zona Radio Comercial", "file": "Cinema_SJorge/Zona_Radio.jpg" },
       { "name": "Escadas", "file": "Cinema_SJorge/Escadas.jpg" },
       { "name": "Piso2", "file": "Cinema_SJorge/Piso2.jpg" },
       { "name": "AV 1", "file": "Cinema_SJorge/AV1.jpg" },
       { "name": "AV 2", "file": "Cinema_SJorge/AV2.jpg" },
-       { "name": "AV 3", "file": "Cinema_SJorge/AV3.jpg" }
+      { "name": "AV 3", "file": "Cinema_SJorge/AV3.jpg" }
     ]
   }
 

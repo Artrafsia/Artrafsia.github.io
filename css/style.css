@@ -380,7 +380,7 @@ h1, h2, h5 {
     transition: color 0.16s, background 0.16s, border 0.16s;
     display: inline-block;
     cursor: pointer;
-    min-width: 70px;
+    min-width: 45px;
     text-align: center;
 }
 

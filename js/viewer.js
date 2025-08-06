@@ -61,6 +61,7 @@ addHotspot("Cinema_SJorge/Entrada.jpg", "Cinema_SJorge/Piso1.jpg", "Entrar no Pi
 addHotspot("Cinema_SJorge/Entrada.jpg", "Cinema_SJorge/AV1.jpg", "Avenida da Liberdade", -15, 180);
 
 addHotspot("Cinema_SJorge/Piso1.jpg", "Cinema_SJorge/Escadas.jpg", "Ir para Escadas", -5, -13);
+addHotspot("Cinema_SJorge/Piso1.jpg", "Cinema_SJorge/Zona_Radio.jpg", "Ir para Zona Radio Comercial", -8, 6);
 addHotspot("Cinema_SJorge/Piso1.jpg", "Cinema_SJorge/Sala2.jpg", "Sala 2", -5, 45);
 addHotspot("Cinema_SJorge/Piso1.jpg", "Cinema_SJorge/Sala3_FFMS.jpg", "Sala 3", -5, 123);
 addHotspot("Cinema_SJorge/Piso1.jpg", "Cinema_SJorge/Entrada.jpg", "Entrada", -10, 178);
@@ -76,6 +77,10 @@ addHotspot("Cinema_SJorge/Sala1.jpg", "Cinema_SJorge/Piso2.jpg", "Piso 2", 0, -1
 addHotspot("Cinema_SJorge/Sala1.jpg", "Cinema_SJorge/Piso2.jpg", "Piso 2", 0, -210);
 addHotspot("Cinema_SJorge/Sala1-1.jpg", "Cinema_SJorge/Piso2.jpg", "Piso 2", 0, -150);
 addHotspot("Cinema_SJorge/Sala1-1.jpg", "Cinema_SJorge/Piso2.jpg", "Piso 2", 0, -210);
+addHotspot("Cinema_SJorge/Sala1-2.jpg", "Cinema_SJorge/Piso2.jpg", "Piso 2", 0, -150);
+addHotspot("Cinema_SJorge/Sala1-2.jpg", "Cinema_SJorge/Piso2.jpg", "Piso 2", 0, -210);
+
+addHotspot("Cinema_SJorge/Zona_Radio.jpg", "Cinema_SJorge/Piso1.jpg", "Piso 1", 0, -160);
 
 addHotspot("Cinema_SJorge/Sala3_FFMS.jpg", "Cinema_SJorge/Piso1.jpg", "Piso 1", -5, 180);
 addHotspot("Cinema_SJorge/Sala3_Cinema.jpg", "Cinema_SJorge/Piso1.jpg", "Piso 1", -5, 180);
