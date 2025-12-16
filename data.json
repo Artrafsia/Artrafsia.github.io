@@ -66,20 +66,46 @@
 
     
     {
-  "id": "meu-novo-projeto",
-  "name": "NEW PROJECT",
-  "mainImage": "img/MeuProjeto/imagem_principal.jpg",
-  "topViewImage": "img/MeuProjeto/topview.jpg",
+  "id": "kilt-street",
+  "name": "KILT STREET",
+  "mainImage": "img/Kilt_Street/Capa_KILTStreet.png",
+  "topViewImage": "img/Kilt_Street/topview.png",
   "rooms": [
-    { "name": "Sala 1", "file": "MeuProjeto/sala1.jpg" },
-    { "name": "Sala 2", "file": "MeuProjeto/sala2.jpg" }
+    { "name": "Escritorio 1", "file": "Kilt_Street/KiltStreet_P1.jpg" },
+    { "name": "Escritorio 2", "file": "Kilt_Street/KiltStreet_P2.jpg" },
+    { "name": "Armazem 1", "file": "Kilt_Street/KiltStreet_P3.jpg" },
+    { "name": "Armazem 2", "file": "Kilt_Street/KiltStreet_P4.jpg" },
+    { "name": "Armazem 3", "file": "Kilt_Street/KiltStreet_P5.jpg" },
+    { "name": "Armazem 4", "file": "Kilt_Street/KiltStreet_P6.jpg" },
+    { "name": "Armazem 5", "file": "Kilt_Street/KiltStreet_P8.jpg" },
+    { "name": "Armazem 6", "file": "Kilt_Street/KiltStreet_P9.jpg" },  
+    { "name": "Jardim 10", "file": "Kilt_Street/KiltStreet_P10.jpg" }
   ],
   "hotspots": [
-    { "from": "MeuProjeto/sala1.jpg", "to": "MeuProjeto/sala2.jpg", "text": "Ir para Sala 2", "pitch": 0, "yaw": 90 }
+    { "from": "Kilt_Street/KiltStreet_P1.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para Escritorio 2", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P1.jpg", "text": "Ir para Escritorio 1", "pitch": -5, "yaw": -180 },
+    { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P3.jpg", "text": "Ir para Armazem 1", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P3.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para Escritorio 2", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P3.jpg", "to": "Kilt_Street/KiltStreet_P4.jpg", "text": "Ir para Armazem 2", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P4.jpg", "to": "Kilt_Street/KiltStreet_P3.jpg", "text": "Ir para Armazem 1", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P4.jpg", "to": "Kilt_Street/KiltStreet_P5.jpg", "text": "Ir para Armazem 3", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P5.jpg", "to": "Kilt_Street/KiltStreet_P4.jpg", "text": "Ir para Armazem 2", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P5.jpg", "to": "Kilt_Street/KiltStreet_P6.jpg", "text": "Ir para Armazem 4", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P6.jpg", "to": "Kilt_Street/KiltStreet_P5.jpg", "text": "Ir para Armazem 3", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P6.jpg", "to": "Kilt_Street/KiltStreet_P8.jpg", "text": "Ir para Armazem 5", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P8.jpg", "to": "Kilt_Street/KiltStreet_P6.jpg", "text": "Ir para Armazem 4", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P8.jpg", "to": "Kilt_Street/KiltStreet_P9.jpg", "text": "Ir para Armazem 6", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P9.jpg", "to": "Kilt_Street/KiltStreet_P8.jpg", "text": "Ir para Armazem 5", "pitch": -5, "yaw": 180 },
+    { "from": "Kilt_Street/KiltStreet_P9.jpg", "to": "Kilt_Street/KiltStreet_P10.jpg", "text": "Ir para Jardim 10", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P10.jpg", "to": "Kilt_Street/KiltStreet_P9.jpg", "text": "Ir para Armazem 6", "pitch": -5, "yaw": 180 }
   ],
-  "topViewHotspots": [
-    { "left": "30%", "top": "40%", "target": "MeuProjeto/sala1.jpg", "title": "Sala 1" }
-  ]
+      "topViewHotspots": [
+        { "left": "50%", "top": "32%", "target": "Cinema_SJorge/AV3.jpg", "title": "Zona Palco" },
+        { "left": "20%", "top": "12%", "target": "Cinema_SJorge/Entrada.jpg", "title": "Entrada" },
+        { "left": "62%", "top": "50%", "target": "Cinema_SJorge/AV1.jpg", "title": "Zona Central" },
+        { "left": "22%", "top": "50%", "target": "Cinema_SJorge/AV2.jpg", "title": "Zona Comida" }
+      ]
+  
 }
   ]
 }
