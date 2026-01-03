@@ -72,7 +72,8 @@
   "topViewImage": "img/Kilt_Street/topview.png",
   "rooms": [
     { "name": "KILT 1", "file": "Kilt_Street/KiltStreet_P1.jpg"},
-    { "name": "KILT 2", "file": "Kilt_Street/KiltStreet_P2.jpg"},
+    { "name": "KILT 2", "file": "Kilt_Street/KiltStreet_P1.5.jpg"},
+    { "name": "KILT 3", "file": "Kilt_Street/KiltStreet_P2.jpg"},
     { "name": "Estacionamento 1", "file": "Kilt_Street/KiltStreet_P13.jpg"},
     { "name": "Lojas 1", "file": "Kilt_Street/KiltStreet_P3.jpg"},
     { "name": "Lojas 2", "file": "Kilt_Street/KiltStreet_P4.5.jpg"},
@@ -90,9 +91,11 @@
 
   ],
   "hotspots": [
-    { "from": "Kilt_Street/KiltStreet_P1.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para KILT 2", "pitch": -5, "yaw": 0 },
-    { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P1.jpg", "text": "Ir para KILT 1", "pitch": -5, "yaw": -180 },
+    { "from": "Kilt_Street/KiltStreet_P1.jpg", "to": "Kilt_Street/KiltStreet_P1.5.jpg", "text": "Ir para KILT 2", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P1.5.jpg", "to": "Kilt_Street/KiltStreet_P1.jpg", "text": "Ir para KILT 1", "pitch": -5, "yaw": -180 },
+    { "from": "Kilt_Street/KiltStreet_P1.5.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para KILT 3", "pitch": -5, "yaw": 0 },
     { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P3.jpg", "text": "Ir para Lojas 1", "pitch": -5, "yaw": 0 },
+    { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P1.5.jpg", "text": "KILT 2", "pitch": -5, "yaw": 180 },
     { "from": "Kilt_Street/KiltStreet_P3.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para KILT 2", "pitch": -5, "yaw": 180 },
     { "from": "Kilt_Street/KiltStreet_P2.jpg", "to": "Kilt_Street/KiltStreet_P13.jpg", "text": "Ir para Estacionamento 1", "pitch": -5, "yaw": 60 },
     { "from": "Kilt_Street/KiltStreet_P13.jpg", "to": "Kilt_Street/KiltStreet_P2.jpg", "text": "Ir para KILT 2", "pitch": -5, "yaw": 60 },
@@ -124,7 +127,8 @@
   
   "topViewHotspots": [
     { "left": "98%", "top": "45%", "target": "Kilt_Street/KiltStreet_P1.jpg", "title": "KILT 1" },
-    { "left": "82%", "top": "45%", "target": "Kilt_Street/KiltStreet_P2.jpg", "title": "KILT 2" },
+    { "left": "90%", "top": "45%", "target": "Kilt_Street/KiltStreet_P1.5.jpg", "title": "KILT 2" },
+    { "left": "82%", "top": "45%", "target": "Kilt_Street/KiltStreet_P2.jpg", "title": "KILT 3" },
     { "left": "70%", "top": "45%", "target": "Kilt_Street/KiltStreet_P3.jpg", "title": "Lojas 1" },
     { "left": "63%", "top": "45%", "target": "Kilt_Street/KiltStreet_P4.5.jpg", "title": "Lojas 2" },
     { "left": "56%", "top": "45%", "target": "Kilt_Street/KiltStreet_P4.jpg", "title": "Lojas 3" },
