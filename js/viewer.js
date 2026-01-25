@@ -141,7 +141,7 @@ fetch("data.json")
     }
 
     topviewBtn.addEventListener("click", () => {
-      topviewOverlay.classList.add("active");
+      topviewOverlay.classList.toggle("active");
     });
 
     // Clica fora para sair
