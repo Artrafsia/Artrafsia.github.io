@@ -153,16 +153,21 @@
       "name": "WORTEN MOCK FESTIVAL 2026 - Cinema São Jorge",
       "mainImage": "img/MOCK2026/Mock.png",
       "topViewImage": "img/MOCK2026/topview.jpg",
+      "images": [
+        { "file": "WortenMockCAST.jpg", "caption": "WortenMockCAST" },
+        { "file": "Portico_AV.jpg", "caption": "PorticoAV" }
+        
+      ],
       "rooms": [
-        { "name": "Sala 1 - Podcast", "file": "MOCK2026/Sala1-2.jpg", "versao": "3" },
-        { "name": "Sala 1 - Stand Up Comedy", "file": "MOCK2026/Sala1.jpg", "versao": "2" },
+      
+        { "name": "Sala 1", "file": "MOCK2026/Sala1.jpg", "versao": "2" },
         { "name": "Sala 2", "file": "MOCK2026/Sala2.jpg" },
-        { "name": "Sala 3 - FFMS", "file": "MOCK2026/Sala3_FFMS.jpg" },
-        { "name": "Sala 3 - Cinema", "file": "MOCK2026/Sala3_Cinema.jpg" },
-        { "name": "Sala 4", "file": "MOCK2026/Sala4.jpg" },
+        
+        
+       
         { "name": "Entrada", "file": "MOCK2026/Entrada.jpg"},
         { "name": "Piso1", "file": "MOCK2026/Piso1.jpg" },
-        { "name": "Zona Radio Comercial", "file": "MOCK2026/Zona_Radio.jpg" },
+       
         { "name": "Escadas", "file": "MOCK2026/Escadas.jpg" },
         { "name": "Piso2", "file": "MOCK2026/Piso2.jpg" },
         { "name": "AV 1", "file": "MOCK2026/AV1.jpg" },

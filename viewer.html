@@ -13,9 +13,30 @@
     <div id="viewer-bar">
         <div id="viewer-actions">
             <button id="topview-button">Top View</button>
+            <button id="images-button" style="display:none">Imagens</button>
             <button id="share-button">Partilhar</button>
             <!-- <a href="index.html" id="home-button"></a> -->
         </div>
+    </div>
+
+    <!-- Gallery Overlay -->
+    <div id="gallery-overlay">
+        <div id="gallery-header">
+            <span id="gallery-title">Imagens</span>
+            <button id="gallery-close">&times;</button>
+        </div>
+        <div id="gallery-grid"></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <button id="lightbox-close">&times;</button>
+        <button id="lightbox-prev">&#8249;</button>
+        <button id="lightbox-next">&#8250;</button>
+        <div id="lightbox-img-wrapper">
+            <img id="lightbox-img" src="" alt="" />
+        </div>
+        <div id="lightbox-caption"></div>
     </div>
     <div id="room-selector-container">
         <div id="current-room"></div>

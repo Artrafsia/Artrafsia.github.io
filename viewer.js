@@ -132,7 +132,7 @@ fetch("data.json")
 
     // ===== GALLERY & LIGHTBOX =====
     const renderFolder = currentProject.rooms[0].file.split("/")[0];
-    const imagesFolder = "img/" + renderFolder + "/Imagens/";
+    const imagesFolder = "img/" + renderFolder + "/imagens/";
 
     const imagesBtn = document.getElementById("images-button");
     const galleryOverlay = document.getElementById("gallery-overlay");
@@ -170,12 +170,19 @@ fetch("data.json")
       galleryImages.forEach((image, index) => {
         const item = document.createElement("div");
         item.className = "gallery-item";
+
+        const thumb = document.createElement("div");
+        thumb.className = "gallery-item-thumb";
+
         const imgEl = document.createElement("img");
         imgEl.src = image.src;
         imgEl.alt = image.caption;
         imgEl.loading = "lazy";
         imgEl.addEventListener("click", () => openLightbox(index));
-        item.appendChild(imgEl);
+
+        thumb.appendChild(imgEl);
+        item.appendChild(thumb);
+
         const cap = document.createElement("div");
         cap.className = "gallery-item-caption";
         cap.textContent = image.caption;
