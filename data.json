@@ -160,8 +160,11 @@
       ],
       "rooms": [
       
-        { "name": "Sala 1", "file": "MOCK2026/Sala1.jpg", "versao": "2" },
+        { "name": "Sala 1 - PODCAST", "file": "MOCK2026/Sala1_PODCAST.jpg", "versao": "2" },
+        { "name": "Sala 1 - STAND UP", "file": "MOCK2026/Sala1_STANDUP.jpg", "versao": "2" },
+
         { "name": "Sala 2", "file": "MOCK2026/Sala2.jpg" },
+        { "name": "Sala 4", "file": "MOCK2026/Sala4.jpg" },
         
         
        
