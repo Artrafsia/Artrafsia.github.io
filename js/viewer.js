@@ -72,9 +72,18 @@ fetch("data.json")
     roomSwitcher.innerHTML = "";
     currentProject.rooms.forEach((room) => {
       const a = document.createElement("a");
-      a.href = `viewer.html?img=${encodeURIComponent(room.file)}&title=${encodeURIComponent(room.name)}&projectId=${encodeURIComponent(projectId)}`;
+      a.href = "#";
       a.textContent = room.name;
       if (room.file === img) a.classList.add("active");
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        const sceneId = generateSceneId(room.file);
+        viewer.loadScene(sceneId);
+        Array.from(roomSwitcher.children).forEach(el => el.classList.remove("active"));
+        a.classList.add("active");
+        roomSwitcher.classList.remove("open");
+        if (switcherToggle) switcherToggle.classList.remove("open");
+      });
       roomSwitcher.appendChild(a);
     });
 
